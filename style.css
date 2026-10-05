@@ -1475,13 +1475,25 @@ h1 span {
     gap: 22px;
 }
 
-.testimonial-card {
+/* .testimonial-card {
 
     padding: 40px 30px;
 
     background: var(--white);
 
     border: 1px solid var(--border-color);
+} */
+ .testimonial-card {
+    padding: 40px 30px;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-7px);
+    box-shadow: var(--shadow);
 }
 
 .quote-icon {
@@ -3009,5 +3021,130 @@ html[dir="rtl"] .footer-brand .social-icons {
 
     .footer-bottom p {
         text-align: center;
+    }
+}
+/* Reduce gap between Bulk CTA and Footer */
+.bulk-section {
+    padding-bottom: 30px;
+}
+
+.site-footer {
+    padding-top: 25px;
+}
+/* Bulk CTA Button */
+.bulk-box .champagne-btn {
+    background: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.bulk-box .champagne-btn svg {
+    color: var(--primary-color);
+    stroke: var(--secondary-color);
+}
+
+.bulk-box .champagne-btn:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.bulk-box .champagne-btn:hover svg {
+    color: var(--primary-color);
+    stroke: var(--primary-color);
+}
+/* =====================================================
+   MOBILE NAV - CENTER ALL LINKS
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .main-nav {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .main-nav .nav-item {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .main-nav .nav-link {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    /* Home dropdown */
+    .main-nav .dropdown-menu {
+        text-align: center !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .main-nav .dropdown-menu a {
+        text-align: center !important;
+    }
+
+    /* Enquire Now */
+    .main-nav .mobile-enquire {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+
+
+/* 360px */
+@media (max-width: 360px) {
+
+    .main-nav {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .main-nav .nav-link {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .main-nav .mobile-enquire {
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+/* =====================================================
+   MOBILE HEADER - STICKY FIX
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        position: sticky !important;
+        top: 0 !important;
+        left: 0;
+        width: 100%;
+        z-index: 99999 !important;
+    }
+
+    .header-container {
+        position: relative;
+        z-index: 99999;
+    }
+}
+
+
+/* 360px */
+@media (max-width: 360px) {
+
+    .site-header {
+        position: sticky !important;
+        top: 0 !important;
+        width: 100%;
+        z-index: 99999 !important;
     }
 }

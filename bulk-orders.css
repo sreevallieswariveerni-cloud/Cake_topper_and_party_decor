@@ -228,7 +228,35 @@
     font-size: 0.7rem;
     line-height: 1.7;
 }
+/* =====================================================
+   BULK AUDIENCE CARD HOVER
+===================================================== */
 
+.bulk-audience-card {
+    transition: var(--transition);
+}
+
+.bulk-audience-card:hover {
+    background: rgba(169, 130, 79, 0.06);
+    transform: translateY(-6px);
+}
+
+.bulk-audience-card .bulk-card-top svg {
+    transition: var(--transition);
+}
+
+.bulk-audience-card:hover .bulk-card-top svg {
+    transform: scale(1.15);
+    color: var(--secondary-color);
+}
+
+.bulk-audience-card h3 {
+    transition: var(--transition);
+}
+
+.bulk-audience-card:hover h3 {
+    color: var(--secondary-color);
+}
 
 /* =====================================================
    NEW PROCESS CARD DESIGN
@@ -1163,10 +1191,17 @@ body.dark-mode .bulk-enquiry-form input[type="number"] {
 }
 
 
-/* Calendar icon */
+/* =====================================================
+   DARK MODE CALENDAR ICON
+===================================================== */
+
+body.dark-mode .bulk-enquiry-form input[type="date"] {
+    color-scheme: dark !important;
+}
+
 body.dark-mode .bulk-enquiry-form input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-    opacity: 1;
+    filter: brightness(0) invert(1) !important;
+    opacity: 1 !important;
     cursor: pointer;
 }
 

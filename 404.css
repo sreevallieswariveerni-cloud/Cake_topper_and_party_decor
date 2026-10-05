@@ -1,0 +1,341 @@
+/* =====================================================
+   404 PAGE
+===================================================== */
+
+.error-page {
+    min-height: 100vh;
+    padding: 35px 7%;
+    background: var(--body-bg);
+    color: var(--text-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   CONTROLS
+===================================================== */
+
+.page-controls {
+    position: absolute;
+    top: 30px;
+    right: 7%;
+
+    display: flex;
+    gap: 10px;
+}
+
+.page-control {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+
+    background: var(--white);
+    color: var(--primary-color);
+
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.page-control svg {
+    width: 18px;
+    height: 18px;
+}
+
+.page-control:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--white);
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.error-content {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+.error-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    color: var(--secondary-color);
+
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.error-label::before {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background: var(--secondary-color);
+}
+
+
+/* =====================================================
+   404 NUMBER
+===================================================== */
+
+.error-content h1 {
+    margin: 0;
+
+    font-family: var(--heading-font);
+    font-size: clamp(7rem, 18vw, 13rem);
+    line-height: 0.8;
+
+    color: var(--primary-color);
+}
+
+.error-content h1 span {
+    color: var(--secondary-color);
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+.error-content h2 {
+    margin: 45px 0 15px;
+
+    font-family: var(--heading-font);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.05;
+
+    color: var(--primary-color);
+}
+
+.error-content p {
+    max-width: 500px;
+    margin: 0 auto 30px;
+
+    color: var(--muted-color);
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.error-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 13px 24px;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+
+    background: transparent;
+    color: var(--primary-color);
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+}
+
+.error-btn svg {
+    width: 17px;
+    height: 17px;
+}
+
+.error-btn:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .error-page {
+    background: var(--body-bg);
+}
+
+body.dark-mode .page-control {
+    background: var(--dark-card);
+    color: var(--white);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .error-btn {
+    color: var(--white);
+}
+
+body.dark-mode .error-btn:hover {
+    color: var(--white);
+}
+
+
+/* =====================================================
+   RTL
+===================================================== */
+
+html[dir="rtl"] .page-controls {
+    right: auto;
+    left: 7%;
+}
+
+html[dir="rtl"] .error-content {
+    direction: rtl;
+}
+
+
+/* =====================================================
+   1024px
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    .error-page {
+        padding: 35px 5%;
+    }
+
+}
+
+
+/* =====================================================
+   768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .error-page {
+        padding: 30px 5%;
+    }
+
+    .page-controls {
+        top: 20px;
+        right: 5%;
+    }
+
+    html[dir="rtl"] .page-controls {
+        left: 5%;
+        right: auto;
+    }
+
+    .error-content h2 {
+        margin-top: 35px;
+    }
+
+}
+
+
+/* =====================================================
+   360px
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .error-page {
+        padding: 25px 20px;
+    }
+
+    .page-controls {
+        top: 18px;
+        right: 20px;
+        gap: 6px;
+    }
+
+    html[dir="rtl"] .page-controls {
+        left: 20px;
+        right: auto;
+    }
+
+    .page-control {
+        width: 36px;
+        height: 36px;
+    }
+
+    .page-control svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .error-content h1 {
+        font-size: 7rem;
+    }
+
+    .error-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .error-content p {
+        font-size: 0.82rem;
+    }
+
+    .error-btn {
+        width: 100%;
+    }
+
+}
+/* =====================================================
+   DARK MODE - BUTTON & ICON VISIBILITY FIX
+===================================================== */
+
+body.dark-mode .page-control {
+    background: #102A43 !important;
+    border: 1px solid #A9824F !important;
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .page-control svg {
+    width: 18px !important;
+    height: 18px !important;
+    color: #FFFFFF !important;
+    stroke: #FFFFFF !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+body.dark-mode .error-btn {
+    background: transparent !important;
+    border: 1px solid #A9824F !important;
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .error-btn svg {
+    color: #FFFFFF !important;
+    stroke: #FFFFFF !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+body.dark-mode .error-btn:hover {
+    background: #A9824F !important;
+    border-color: #A9824F !important;
+    color: #FFFFFF !important;
+}
+
+body.dark-mode .error-btn:hover svg {
+    color: #FFFFFF !important;
+    stroke: #FFFFFF !important;
+}
