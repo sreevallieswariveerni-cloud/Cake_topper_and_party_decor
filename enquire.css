@@ -1,0 +1,774 @@
+/* =====================================================
+   ENQUIRE PAGE
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: #faf7f2;
+    color: #102a43;
+    font-family: "Lora", serif;
+}
+
+
+/* =====================================================
+   PAGE CONTROLS
+===================================================== */
+
+.page-controls {
+    position: fixed;
+    top: 28px;
+    right: 7%;
+    z-index: 20;
+    display: flex;
+    gap: 10px;
+}
+
+.control-btn {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #d9c9b5;
+    border-radius: 50%;
+    background: #fff;
+    color: #102a43;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.control-btn:hover {
+    background: #a9824f;
+    border-color: #a9824f;
+    color: #fff;
+}
+
+.control-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.enquire-page {
+    min-height: 100vh;
+    padding: 60px 7%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.enquire-card {
+    width: 100%;
+    max-width: 1100px;
+    padding: 65px 70px 70px;
+    background: #fff;
+    border: 1px solid #ded5ca;
+    border-radius: 24px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.enquire-logo {
+    width: fit-content;
+    margin: 0 auto 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #102a43;
+    color: #a9824f;
+}
+
+.logo-icon svg {
+    width: 21px;
+}
+
+.logo-name {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102a43;
+}
+
+.logo-name strong {
+    color: #a9824f;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.enquire-heading {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 15px;
+    color: #a9824f;
+    font-family: "Lora", serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+
+.enquire-heading h1 {
+    margin-bottom: 12px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3rem, 5vw, 4.4rem);
+    font-weight: 600;
+    line-height: 0.95;
+    color: #102a43;
+}
+
+.enquire-heading h1 span {
+    color: #a9824f;
+}
+
+.enquire-heading p {
+    color: #788695;
+    font-size: 0.78rem;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.enquiry-form {
+    width: 100%;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.form-group {
+    margin-bottom: 23px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #102a43;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.form-group label span {
+    color: #a9824f;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #ded5ca;
+    border-radius: 11px;
+    outline: none;
+    background: #fff;
+    color: #102a43;
+    font-family: "Lora", serif;
+    font-size: 0.73rem;
+    transition: 0.3s ease;
+}
+
+.form-group input,
+.form-group select {
+    height: 56px;
+    padding: 0 16px;
+}
+
+.form-group textarea {
+    min-height: 135px;
+    padding: 16px;
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa3ad;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #a9824f;
+    box-shadow: 0 0 0 3px rgba(169, 130, 79, 0.08);
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.submit-btn {
+    width: 100%;
+    height: 56px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #102a43;
+    border-radius: 11px;
+    background: #102a43;
+    color: #fff;
+    font-family: "Lora", serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #a9824f;
+    border-color: #a9824f;
+}
+
+.submit-btn svg {
+    width: 17px;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode {
+    background: #091c2e;
+    color: #f8f4ee;
+}
+
+body.dark-mode .enquire-card {
+    background: #102a43;
+    border-color: #29435a;
+}
+
+body.dark-mode .logo-name,
+body.dark-mode .enquire-heading h1,
+body.dark-mode .form-group label {
+    color: #fff;
+}
+
+body.dark-mode .enquire-heading p {
+    color: #b9c3cd;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group select,
+body.dark-mode .form-group textarea {
+    background: #091c2e;
+    border-color: #29435a;
+    color: #fff;
+}
+
+
+/* ================================
+   CALENDAR ICON
+================================ */
+
+body.dark-mode input[type="date"] {
+    color-scheme: dark;
+}
+
+body.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 1;
+}
+
+
+/* ================================
+   NUMBER ARROWS
+================================ */
+
+body.dark-mode input[type="number"] {
+    color-scheme: dark;
+}
+
+body.dark-mode input[type="number"]::-webkit-inner-spin-button,
+body.dark-mode input[type="number"]::-webkit-outer-spin-button {
+    filter: invert(1);
+    opacity: 1;
+}
+
+
+/* ================================
+   PLACEHOLDER
+================================ */
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+    color: #8d9ba8;
+}
+
+
+/* ================================
+   CONTROL BUTTONS
+================================ */
+
+body.dark-mode .control-btn {
+    background: #102a43;
+    border-color: #536879;
+    color: #fff;
+}
+
+body.dark-mode .control-btn:hover {
+    background: #a9824f;
+    border-color: #a9824f;
+    color: #fff;
+}
+
+
+/* =====================================================
+   RTL
+===================================================== */
+
+html[dir="rtl"] .form-group {
+    text-align: right;
+}
+
+html[dir="rtl"] .page-controls {
+    right: auto;
+    left: 7%;
+}
+
+html[dir="rtl"] .submit-btn svg {
+    transform: rotate(180deg);
+}
+
+
+/* =====================================================
+   1024px
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    .enquire-page {
+        padding: 45px 5%;
+    }
+
+    .enquire-card {
+        padding: 55px 50px 60px;
+    }
+
+    .page-controls {
+        right: 5%;
+    }
+
+}
+
+
+/* =====================================================
+   768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .enquire-page {
+        padding: 30px 4%;
+    }
+
+    .enquire-card {
+        padding: 45px 30px 50px;
+        border-radius: 20px;
+    }
+
+    .page-controls {
+        top: 18px;
+        right: 4%;
+    }
+
+    .control-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .enquire-logo {
+        margin-bottom: 24px;
+    }
+
+    .enquire-heading {
+        margin-bottom: 35px;
+    }
+
+    .enquire-heading h1 {
+        font-size: 3.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
+
+
+/* =====================================================
+   360px
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .enquire-page {
+        padding: 15px;
+    }
+
+    .enquire-card {
+        padding: 40px 18px;
+        border-radius: 16px;
+    }
+
+    .page-controls {
+        top: 12px;
+        right: 15px;
+        gap: 7px;
+    }
+
+    .control-btn {
+        width: 37px;
+        height: 37px;
+    }
+
+    .control-btn svg {
+        width: 16px;
+    }
+
+    .logo-name {
+        font-size: 1.7rem;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .enquire-heading {
+        margin-bottom: 30px;
+    }
+
+    .form-label {
+        font-size: 0.57rem;
+    }
+
+    .enquire-heading h1 {
+        font-size: 2.8rem;
+    }
+
+    .enquire-heading p {
+        font-size: 0.7rem;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 52px;
+    }
+
+    .form-group textarea {
+        min-height: 120px;
+    }
+
+    .submit-btn {
+        height: 52px;
+    }
+
+}
+/* =====================================================
+   ENQUIRE PAGE - FINAL FIXES
+===================================================== */
+
+
+/* 1. PARTY POP - remove space between Party and Pop */
+
+.enquire-logo .logo-name {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    white-space: nowrap;
+}
+
+.enquire-logo .logo-name span,
+.enquire-logo .logo-name strong {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 2. RTL + DARK MODE BUTTONS
+   Keep them OUTSIDE the form card */
+
+.page-controls {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* RTL position */
+
+html[dir="rtl"] .page-controls {
+    right: auto;
+    left: 24px;
+}
+
+
+/* Button appearance */
+
+.control-btn {
+    width: 45px;
+    height: 45px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid #d9c9b5;
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #102a43;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.control-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* 3. DARK MODE - buttons */
+
+body.dark-mode .control-btn {
+    background: #102a43;
+    border-color: #536879;
+    color: #ffffff;
+}
+
+body.dark-mode .control-btn svg {
+    color: #ffffff;
+    stroke: #ffffff;
+}
+
+body.dark-mode .control-btn:hover {
+    background: #a9824f;
+    border-color: #a9824f;
+    color: #ffffff;
+}
+
+
+/* 4. DARK MODE - CALENDAR ICON */
+
+body.dark-mode input[type="date"] {
+    color-scheme: dark !important;
+    background: #091c2e !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: brightness(0) invert(1) !important;
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
+
+/* 5. DARK MODE - NUMBER ARROWS */
+
+body.dark-mode input[type="number"] {
+    color-scheme: dark !important;
+    background: #091c2e !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode input[type="number"]::-webkit-inner-spin-button,
+body.dark-mode input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+/* 6. Number input - dark background */
+
+body.dark-mode input[type="number"] {
+    background: #091c2e;
+    color: #ffffff;
+}
+
+
+/* 7. Date input - dark background */
+
+body.dark-mode input[type="date"] {
+    background: #091c2e;
+    color: #ffffff;
+}
+
+
+/* 8. Make native date/number controls visible */
+
+body.dark-mode .form-group input[type="date"],
+body.dark-mode .form-group input[type="number"] {
+    color-scheme: dark;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    .page-controls {
+        top: 15px;
+        right: 20px;
+    }
+
+    html[dir="rtl"] .page-controls {
+        right: auto;
+        left: 20px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .page-controls {
+        top: 12px;
+        right: 15px;
+        gap: 8px;
+    }
+
+    html[dir="rtl"] .page-controls {
+        right: auto;
+        left: 15px;
+    }
+
+    .control-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
+@media (max-width: 360px) {
+
+    /* Give controls their own space above the card */
+    .enquire-page {
+        padding-top: 65px;
+    }
+
+    .page-controls {
+        top: 12px;
+        right: 15px;
+        gap: 7px;
+    }
+
+    html[dir="rtl"] .page-controls {
+        right: auto;
+        left: 15px;
+    }
+
+    .control-btn {
+        width: 37px;
+        height: 37px;
+    }
+
+    .control-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+}
+/* =====================================================
+   ENQUIRE LOGO - RTL FIX
+===================================================== */
+
+/* Always keep Party Pop text in normal order */
+.enquire-logo {
+    direction: ltr !important;
+}
+
+/* Keep Party + Pop together */
+.enquire-logo .logo-name {
+    direction: ltr !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    white-space: nowrap;
+}
+
+/* RTL: move logo image to RIGHT */
+html[dir="rtl"] .enquire-logo {
+    direction: ltr !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+}
+
+/* Text first */
+html[dir="rtl"] .enquire-logo .logo-name {
+    order: 1 !important;
+}
+
+/* Image second = RIGHT */
+html[dir="rtl"] .enquire-logo .logo-mark {
+    order: 2 !important;
+    margin-left: 8px !important;
+    margin-right: 0 !important;
+}
+
+/* Keep image size */
+.enquire-logo .logo-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.enquire-logo .logo-mark img {
+    display: block;
+}

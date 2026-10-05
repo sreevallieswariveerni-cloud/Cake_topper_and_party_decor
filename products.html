@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Celebration Studio</title>
+    <link rel="icon" type="image/png" sizes="184x184" href="logoo_image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Existing Common Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Products Page Styles -->
+    <link rel="stylesheet" href="products.css">
+
+
+    <!-- AOS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">
+    <img src="logoo_image.png" alt="Party Pop Logo">
+</span>
+            <span class="logo-text">
+                <span class="logo-primary">Party</span>
+                <span class="logo-secondary">Pop</span>
+            </span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+            <div class="nav-item dropdown">
+                <a href="#home" class="nav-link home-dropdown">
+                    Home
+                    <i data-lucide="chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1</a>
+                    <a href="home-2.html">Home 2</a>
+                </div>
+            </div>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="custom-design.html" class="nav-link">Design Upload</a>
+            <a href="bulk-orders.html" class="nav-link">Bulk Orders</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+                <i data-lucide="moon"></i>
+            </button>
+            <button class="icon-btn" id="rtlToggle" aria-label="Toggle RTL">
+                <i data-lucide="arrow-left-right"></i>
+            </button>
+            <a href="enquire.html" class="header-cta">
+                Enquire Now
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     PAGE HERO
+===================================================== -->
+
+<section class="products-hero">
+
+    <div class="container products-hero-inner">
+
+
+        <div
+            class="products-hero-content"
+            data-aos="fade-up">
+
+            <span class="section-label">
+
+                OUR COLLECTION
+
+            </span>
+
+
+            <h1>
+
+                Made for
+
+                <span>
+                    your moment.
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Explore personalized cake toppers,
+                celebration décor and thoughtful
+                details created for every occasion.
+
+            </p>
+
+        </div>
+
+
+        <div
+            class="products-hero-meta"
+            data-aos="fade-up"
+            data-aos-delay="100">
+
+            <span>
+                01
+            </span>
+
+            <p>
+                Browse by occasion,
+                discover your style
+                and make it personal.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CATEGORY NAVIGATION
+===================================================== -->
+
+<section class="product-categories">
+
+    <div class="container">
+
+        <div
+            class="category-heading"
+            data-aos="fade-up">
+
+            <span class="section-label">
+                SHOP BY OCCASION
+            </span>
+
+            <h2>
+
+                Find something
+                <span>special.</span>
+
+            </h2>
+
+        </div>
+
+
+        <div
+            class="category-tabs"
+            data-aos="fade-up"
+            data-aos-delay="100">
+
+            <button
+                class="category-tab active"
+                data-filter="all">
+
+                All
+
+            </button>
+
+
+            <button
+                class="category-tab"
+                data-filter="birthday">
+
+                Birthday
+
+            </button>
+
+
+            <button
+                class="category-tab"
+                data-filter="wedding">
+
+                Wedding
+
+            </button>
+
+
+            <button
+                class="category-tab"
+                data-filter="baby">
+
+                Baby Shower
+
+            </button>
+
+
+            <button
+                class="category-tab"
+                data-filter="anniversary">
+
+                Anniversary
+
+            </button>
+
+
+            <button
+                class="category-tab"
+                data-filter="party">
+
+                Party
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section class="products-section">
+
+    <div class="container">
+
+
+        <div class="products-topbar">
+
+            <p>
+
+                Showing
+                <strong id="productCount">
+                    12
+                </strong>
+                products
+
+            </p>
+
+
+            <button class="sort-button">
+
+                <i data-lucide="sliders-horizontal"></i>
+
+                Featured
+
+                <i data-lucide="chevron-down"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <div class="products-grid"
+             id="productsGrid">
+
+
+            <!-- PRODUCT 01 -->
+
+            <article
+                class="product-card"
+                data-category="birthday"
+                data-aos="fade-up">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1664205766210-722dc2e43275?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29uYWxpc2VkJTIwbmFtZSUyMHRvcHBlcnxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Personalized birthday cake topper">
+
+                    <span class="product-number">
+                        01
+                    </span>
+
+                    <button
+                        class="quick-view"
+                        aria-label="Quick view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        BIRTHDAY
+                    </span>
+
+                    <h3>
+                        Personalized Name Topper
+                    </h3>
+
+                    <p>
+                        A custom cake topper designed
+                        with your name and celebration style.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 02 -->
+
+            <article
+                class="product-card"
+                data-category="birthday"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1664032655802-ef0a6895619a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlydGhkYXklMjBjZWxlYnJhdGlvbiUyMHRvcHBlcnxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Birthday cake celebration topper">
+
+                    <span class="product-number">
+                        02
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        BIRTHDAY
+                    </span>
+
+                    <h3>
+                        Birthday Celebration Topper
+                    </h3>
+
+                    <p>
+                        A playful personalized piece
+                        for memorable birthday moments.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 03 -->
+
+            <article
+                class="product-card"
+                data-category="wedding"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1768777270685-5f71c0c4151d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWxlZ2FudCUyMHdlZGRpbmclMjB0b3BwZXJ8ZW58MHx8MHx8fDA%3D"
+                        alt="Wedding celebration décor">
+
+                    <span class="product-number">
+                        03
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        WEDDING
+                    </span>
+
+                    <h3>
+                        Elegant Wedding Topper
+                    </h3>
+
+                    <p>
+                        Refined personalized details
+                        created for your special day.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 04 -->
+
+            <article
+                class="product-card"
+                data-category="wedding"
+                data-aos="fade-up">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1741865079561-6cdf71f8b01c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvdXBsZSUyMG5hbWUlMjB0b3BwZXJ8ZW58MHx8MHx8fDA%3D"
+                        alt="Wedding event decoration">
+
+                    <span class="product-number">
+                        04
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        WEDDING
+                    </span>
+
+                    <h3>
+                        Couple Name Topper
+                    </h3>
+
+                    <p>
+                        A simple and elegant personalized
+                        piece for wedding celebrations.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 05 -->
+
+            <article
+                class="product-card"
+                data-category="baby"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1594300907312-c6603f83b2c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFieSUyMHNob3dlciUyMHRvcHBlcnxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Baby shower celebration">
+
+                    <span class="product-number">
+                        05
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        BABY SHOWER
+                    </span>
+
+                    <h3>
+                        Little One Topper
+                    </h3>
+
+                    <p>
+                        Sweet personalized décor
+                        for welcoming a little one.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 06 -->
+
+            <article
+                class="product-card"
+                data-category="baby"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1711638374362-a26eb6bbb281?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFieSUyMHNob3dlciUyMGRlY29yfGVufDB8fDB8fHww"
+                        alt="Baby shower party decorations">
+
+                    <span class="product-number">
+                        06
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        BABY SHOWER
+                    </span>
+
+                    <h3>
+                        Baby Shower Décor Set
+                    </h3>
+
+                    <p>
+                        Coordinated celebration details
+                        for a beautiful baby shower.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 07 -->
+
+            <article
+                class="product-card"
+                data-category="anniversary"
+                data-aos="fade-up">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1616897306790-876dd6599e79?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFubml2ZXJzYXJ5JTIwbmFtZSUyMHRvcHBlcnxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Anniversary celebration">
+
+                    <span class="product-number">
+                        07
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        ANNIVERSARY
+                    </span>
+
+                    <h3>
+                        Anniversary Name Topper
+                    </h3>
+
+                    <p>
+                        A meaningful personalized
+                        detail for your special milestone.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 08 -->
+
+            <article
+                class="product-card"
+                data-category="anniversary"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://png.pngtree.com/thumb_back/fw800/background/20250926/pngtree-th-anniversary-celebration-with-elegant-gold-balloons-white-flowers-and-luxurious-image_19634589.webp"
+                        alt="Anniversary party décor">
+
+                    <span class="product-number">
+                        08
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        ANNIVERSARY
+                    </span>
+
+                    <h3>
+                        Milestone Celebration
+                    </h3>
+
+                    <p>
+                        Personalized décor for
+                        meaningful anniversary moments.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 09 -->
+
+            <article
+                class="product-card"
+                data-category="party"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://i.pinimg.com/736x/df/1d/84/df1d848f6ba5cc92707761ec6586cb15.jpg"
+                        alt="Party celebration decoration">
+
+                    <span class="product-number">
+                        09
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        PARTY
+                    </span>
+
+                    <h3>
+                        Celebration Décor Set
+                    </h3>
+
+                    <p>
+                        Coordinated décor created
+                        for stylish party setups.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 10 -->
+
+            <article
+                class="product-card"
+                data-category="party"
+                data-aos="fade-up">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1667761256081-ded820d68ef4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3VzdG9tJTIwcGFydHklMjB0b3BwZXJ8ZW58MHx8MHx8fDA%3D"
+                        alt="Party cake decoration">
+
+                    <span class="product-number">
+                        10
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        PARTY
+                    </span>
+
+                    <h3>
+                        Custom Party Topper
+                    </h3>
+
+                    <p>
+                        Personalised details for
+                        your unique celebration theme.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 11 -->
+
+            <article
+                class="product-card"
+                data-category="birthday"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://curatedevents.com/wp-content/uploads/2023/01/Girl-celebrating-her-fifth-birthday.jpg"
+                        alt="Birthday cake topper">
+
+                    <span class="product-number">
+                        11
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        BIRTHDAY
+                    </span>
+
+                    <h3>
+                        Milestone Birthday Topper
+                    </h3>
+
+                    <p>
+                        Celebrate an important milestone
+                        with a personalized design.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 12 -->
+
+            <article
+                class="product-card"
+                data-category="party"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=85"
+                        alt="Personalized party decoration">
+
+                    <span class="product-number">
+                        12
+                    </span>
+
+                    <button
+                        class="quick-view">
+
+                        <i data-lucide="eye"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <span class="product-category">
+                        PARTY
+                    </span>
+
+                    <h3>
+                        Custom Celebration Details
+                    </h3>
+
+                    <p>
+                        Personalised pieces created
+                        around your celebration theme.
+                    </p>
+
+
+                    <div class="product-footer">
+
+                        <span class="product-price">
+                            Custom
+                        </span>
+
+                        <a href="enquire.html">
+
+                            Enquire
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CUSTOM DESIGN CTA
+===================================================== -->
+
+<section class="products-custom">
+
+    <div class="container">
+
+        <div
+            class="products-custom-inner"
+            data-aos="fade-up">
+
+
+            <div>
+
+                <span class="section-label">
+
+                    CAN'T FIND WHAT YOU'RE LOOKING FOR?
+
+                </span>
+
+
+                <h2>
+
+                    Create something
+                    <span>uniquely yours.</span>
+
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <p>
+
+                    Have your own design or a specific
+                    idea in mind? Share it with us and
+                    we'll help bring it to life.
+
+                </p>
+
+
+                <a
+                    href="custom-design.html"
+                    class="premium-product-btn">
+
+                    Upload Your Design
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TRUST / VALUE
+===================================================== -->
+
+<section class="products-values">
+
+    <div class="container">
+
+
+        <div
+            class="products-values-heading"
+            data-aos="fade-up">
+
+            <span class="section-label">
+                WHY CELEBRATION STUDIO
+            </span>
+
+            <h2>
+
+                Details that make
+                <span>the difference.</span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="products-values-grid">
+
+
+            <div
+                class="product-value"
+                data-aos="fade-up">
+
+                <i data-lucide="sparkles"></i>
+
+                <h3>
+                    Personalised
+                </h3>
+
+                <p>
+                    Designed around your
+                    celebration and style.
+                </p>
+
+            </div>
+
+
+            <div
+                class="product-value"
+                data-aos="fade-up"
+                data-aos-delay="100">
+
+                <i data-lucide="palette"></i>
+
+                <h3>
+                    Custom Designs
+                </h3>
+
+                <p>
+                    Share your idea and create
+                    something truly personal.
+                </p>
+
+            </div>
+
+
+            <div
+                class="product-value"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <i data-lucide="heart"></i>
+
+                <h3>
+                    Made with Care
+                </h3>
+
+                <p>
+                    Thoughtful details for
+                    meaningful occasions.
+                </p>
+
+            </div>
+
+
+            <div
+                class="product-value"
+                data-aos="fade-up"
+                data-aos-delay="300">
+
+                <i data-lucide="package"></i>
+
+                <h3>
+                    Bulk Orders
+                </h3>
+
+                <p>
+                    Celebration solutions for
+                    larger events and occasions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL CTA
+===================================================== -->
+
+<section class="products-final-cta">
+
+    <div class="container">
+
+        <div
+            class="products-final-content"
+            data-aos="fade-up">
+
+            <span class="section-label">
+                READY TO CELEBRATE?
+            </span>
+
+            <h2>
+
+                Let's make your
+                <span>moment memorable.</span>
+
+            </h2>
+
+
+            <a
+                href="enquire.html"
+                class="premium-product-btn">
+
+                Enquire Now
+
+                <i data-lucide="arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a href="#" class="logo footer-logo">
+                <span class="logo-mark">
+    <img src="logoo_image.png" alt="Party Pop Logo">
+</span>
+                <span class="logo-text">
+                    <span class="logo-primary">Party</span>
+                    <span class="logo-secondary">Pop</span>
+                </span>
+            </a>
+            <p>
+                Personalized celebration décor
+                created around your special moments.From custom cake toppers to thoughtful event details, we create beautiful pieces made especially for you.
+            </p>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                   <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="custom-design.html">Design Upload</a>
+            <a href="bulk-orders.html">Bulk Orders</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-column">
+            <h3>Occasions</h3>
+            <a href="#">Birthday</a>
+            <a href="#">Wedding</a>
+            <a href="#">Baby Shower</a>
+            <a href="#">Anniversary</a>
+        </div>
+        <div class="footer-column footer-contact">
+    <h4>SUPPORT</h4>
+
+    <div class="footer-contact-item">
+        <i data-lucide="map-pin"></i>
+        <span>Hyderabad, Telangana</span>
+    </div>
+
+    <div class="footer-contact-item">
+        <i data-lucide="phone"></i>
+        <a href="tel:+919999999999">
+            +91 99999 99999
+        </a>
+    </div>
+
+    <div class="footer-contact-item">
+        <i data-lucide="mail"></i>
+        <a href="mailto:hello@partypop.com">
+            hello@partypop.com
+        </a>
+    </div>
+</div>
+    </div>
+    <div class="container footer-bottom">
+        <p>
+            © 2026 PartyPop. All rights reserved.
+        </p>
+        <div>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+    </div>
+</footer>
+
+
+<!-- AOS -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+<!-- Existing Main JS -->
+
+<script src="main.js"></script>
+
+
+<script>
+
+    lucide.createIcons();
+
+    AOS.init({
+
+        duration: 800,
+
+        once: true,
+
+        offset: 70
+
+    });
+
+</script>
+
+
+<!-- Product Filter -->
+
+<script>
+
+const categoryTabs =
+    document.querySelectorAll(".category-tab");
+
+const productCards =
+    document.querySelectorAll(".product-card");
+
+const productCount =
+    document.getElementById("productCount");
+
+
+categoryTabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+
+        categoryTabs.forEach(item => {
+
+            item.classList.remove("active");
+
+        });
+
+
+        tab.classList.add("active");
+
+
+        const filter =
+            tab.getAttribute("data-filter");
+
+
+        let visibleCount = 0;
+
+
+        productCards.forEach(card => {
+
+
+            const category =
+                card.getAttribute("data-category");
+
+
+            if (
+                filter === "all" ||
+                category === filter
+            ) {
+
+                card.style.display = "";
+
+                visibleCount++;
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+
+        productCount.textContent =
+            visibleCount;
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>

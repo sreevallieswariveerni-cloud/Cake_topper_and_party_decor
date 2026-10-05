@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enquire Now | Party Pop</title>
+    <link rel="icon" type="image/png" sizes="184x184" href="logoo_image.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lora:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Page CSS -->
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="enquire.css">
+</head>
+
+<body>
+
+    <!-- Floating Controls -->
+    <div class="page-controls">
+
+        <button id="rtlToggle"
+                class="control-btn"
+                aria-label="Toggle RTL">
+
+            <i data-lucide="arrow-left-right"></i>
+
+        </button>
+
+        <button id="themeToggle"
+                class="control-btn"
+                aria-label="Toggle dark mode">
+
+            <i data-lucide="moon"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- Main Enquiry Card -->
+
+    <main class="enquire-page">
+
+        <section class="enquire-card">
+
+
+            <!-- Logo -->
+
+            <a href="index.html"
+               class="enquire-logo">
+
+               <span class="logo-mark">
+    <img src="logoo_image.png" alt="Party Pop Logo">
+</span>
+                <span class="logo-name">
+                    <span>Party</span>
+                    <strong>Pop</strong>
+                </span>
+
+            </a>
+
+
+            <!-- Heading -->
+
+            <div class="enquire-heading">
+
+                <span class="form-label">
+                    ENQUIRY FORM
+                </span>
+
+                <h1>
+                    Plan Your
+                    <span>Celebration</span>
+                </h1>
+
+                <p>
+                    Fill in the details below and we'll get back
+                    to you soon.
+                </p>
+
+            </div>
+
+
+            <!-- Form -->
+
+            <form id="enquiryForm"
+                  class="enquiry-form">
+
+
+                <!-- Row 1 -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+91 98765 43210"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Row 2 -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="eventType">
+                            Event Type <span>*</span>
+                        </label>
+
+                        <select
+                            id="eventType"
+                            name="eventType"
+                            required>
+
+                            <option value="">
+                                Select event
+                            </option>
+
+                            <option value="birthday">
+                                Birthday
+                            </option>
+
+                            <option value="wedding">
+                                Wedding
+                            </option>
+
+                            <option value="baby-shower">
+                                Baby Shower
+                            </option>
+
+                            <option value="anniversary">
+                                Anniversary
+                            </option>
+
+                            <option value="kids-party">
+                                Kids Party
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Row 3 -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="eventDate">
+                            Event Date <span>*</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="eventDate"
+                            name="eventDate"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guests">
+                            Number of Guests
+                        </label>
+
+                        <input
+                            type="number"
+                            id="guests"
+                            name="guests"
+                            placeholder="Approx. guests"
+                            min="1">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Row 4 -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="product">
+                            What do you need?
+                        </label>
+
+                        <select
+                            id="product"
+                            name="product">
+
+                            <option value="">
+                                Select an option
+                            </option>
+
+                            <option value="cake-topper">
+                                Cake Topper
+                            </option>
+
+                            <option value="party-decor">
+                                Party Decor
+                            </option>
+
+                            <option value="custom-design">
+                                Custom Design
+                            </option>
+
+                            <option value="bulk-order">
+                                Bulk Order
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="budget">
+                            Approximate Budget
+                        </label>
+
+                        <select
+                            id="budget"
+                            name="budget">
+
+                            <option value="">
+                                Select budget
+                            </option>
+
+                            <option value="under-500">
+                                Under ₹500
+                            </option>
+
+                            <option value="500-1000">
+                                ₹500 – ₹1,000
+                            </option>
+
+                            <option value="1000-2500">
+                                ₹1,000 – ₹2,500
+                            </option>
+
+                            <option value="2500-5000">
+                                ₹2,500 – ₹5,000
+                            </option>
+
+                            <option value="5000-plus">
+                                ₹5,000+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Message -->
+
+                <div class="form-group full-width">
+
+                    <label for="message">
+                        Tell us about your celebration
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell us about your theme, colors, design idea or anything else..."></textarea>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button type="submit"
+                        class="submit-btn">
+
+                    Send Enquiry
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </button>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
