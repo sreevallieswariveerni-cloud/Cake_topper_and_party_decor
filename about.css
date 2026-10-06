@@ -1,0 +1,895 @@
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+    overflow:hidden;
+}
+
+.about-container {
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.section-space {
+    padding:100px 0;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 0;
+
+    position: relative;
+    isolation: isolate;
+
+    background:
+        url("https://images.meesho.com/images/products/986755744/pvos8_512.webp?width=512")
+        center center / cover no-repeat;
+}
+
+/* Dark overlay only on background image */
+.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(9, 28, 46, 0.58);
+    z-index: -1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Small heading */
+.about-eyebrow {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #D6A66A !important;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+/* Main heading */
+.about-hero h1 {
+    margin: 0 0 28px;
+    color: #FFFFFF !important;
+    font-family: var(--heading-font);
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.05;
+    font-weight: 600;
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Gold part */
+.about-hero h1 span {
+    color: #D6A66A !important;
+    display: inline;
+}
+
+/* Description */
+.about-hero p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-weight: 500;
+
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+/* =========================================
+   OUR STORY
+========================================= */
+
+.story-grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.story-content h2,
+.section-heading h2 {
+    margin:0 0 20px;
+    color:var(--primary-color);
+    font-family:var(--heading-font);
+    font-size:clamp(2rem,4vw,3.2rem);
+    line-height:1.15;
+}
+
+.story-content p {
+    margin:0 0 16px;
+    color:var(--muted-color);
+    font-size:.95rem;
+    line-height:1.8;
+}
+
+.story-visual {
+    display:flex;
+    justify-content:center;
+}
+
+.story-card {
+    width:100%;
+    max-width:430px;
+    padding:65px 45px;
+    text-align:center;
+    background:var(--primary-color);
+    border-radius:24px;
+    box-shadow:var(--shadow);
+}
+
+.story-icon {
+    width:70px;
+    height:70px;
+    margin:0 auto 25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid var(--secondary-color);
+    border-radius:50%;
+    color:var(--secondary-color);
+}
+
+.story-icon svg {
+    width:30px;
+    height:30px;
+}
+
+.story-card span {
+    display:block;
+    margin-bottom:8px;
+    color:var(--secondary-color);
+    font-size:.75rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.story-card h3 {
+    margin:0 0 15px;
+    color:var(--white);
+    font-family:var(--heading-font);
+    font-size:2rem;
+}
+
+.story-card p {
+    margin:0;
+    color:rgba(255,255,255,.75);
+    line-height:1.7;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+/* =========================================
+   SECTION HEADING - CENTERED
+========================================= */
+
+.section-heading {
+    width:100%;
+    max-width:900px;
+    margin:0 auto 55px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    gap:18px;
+
+    text-align:center;
+}
+
+.section-heading .section-label {
+    margin:0;
+    text-align:center;
+}
+
+.section-heading h2 {
+    margin:0;
+    max-width:800px;
+    text-align:center;
+}
+
+.section-heading p {
+    max-width:650px;
+    margin:0 auto;
+    color:var(--muted-color);
+    line-height:1.8;
+    font-size:1rem;
+    text-align:center;
+}
+
+/* WHY PARTY POP */
+.about-values .section-heading {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    text-align:center;
+}
+
+.about-values .section-heading h2 {
+    max-width:800px;
+    text-align:center;
+}
+@media (max-width:768px) {
+
+    .section-heading {
+        grid-template-columns:1fr;
+        gap:15px;
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    .section-heading .section-label {
+        margin:0 auto;
+    }
+
+    .section-heading h2 {
+        margin:0 auto;
+    }
+
+    .section-heading p {
+        margin:0 auto;
+        max-width:600px;
+    }
+
+    .about-values .section-heading {
+        grid-template-columns:1fr;
+        gap:15px;
+        text-align:center;
+    }
+
+}
+@media (max-width:360px) {
+
+    .section-heading {
+        gap:12px;
+        margin-bottom:35px;
+    }
+
+    .section-heading h2 {
+        font-size:2rem;
+        line-height:1.15;
+    }
+
+    .section-heading p {
+        font-size:.9rem;
+        line-height:1.7;
+    }
+
+}
+
+/* =========================================
+   WHAT WE DO
+========================================= */
+
+.about-services {
+    background:var(--body-bg);
+}
+
+.about-service-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border:1px solid var(--border-color);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.about-service-card {
+    padding:45px 30px;
+    text-align:center;
+    background:var(--white);
+    border-right:1px solid var(--border-color);
+    transition:var(--transition);
+}
+
+.about-service-card:last-child {
+    border-right:none;
+}
+
+.about-service-card:hover {
+    transform:translateY(-6px);
+}
+
+.service-icon {
+    width:58px;
+    height:58px;
+    margin:0 auto 25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--secondary-color);
+    border:1px solid var(--secondary-color);
+    border-radius:50%;
+    transition:var(--transition);
+}
+
+.service-icon svg {
+    width:25px;
+    height:25px;
+}
+
+.about-service-card:hover .service-icon {
+    background:var(--secondary-color);
+    color:var(--white);
+    transform:scale(1.08);
+}
+
+.about-service-card h3 {
+    margin:0 0 12px;
+    color:var(--primary-color);
+    font-size:1.15rem;
+    transition:var(--transition);
+}
+
+.about-service-card:hover h3 {
+    color:var(--secondary-color);
+}
+
+.about-service-card p {
+    margin:0;
+    color:var(--muted-color);
+    font-size:.9rem;
+    line-height:1.7;
+}
+
+
+/* =========================================
+   OUR APPROACH
+========================================= */
+
+.approach-timeline {
+    position:relative;
+    max-width:1000px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.approach-line {
+    position:absolute;
+    top:34px;
+    left:12.5%;
+    right:12.5%;
+    height:1px;
+    background:var(--border-color);
+}
+
+.approach-item {
+    position:relative;
+    z-index:1;
+    text-align:center;
+}
+
+.approach-number {
+    width:68px;
+    height:68px;
+    margin:0 auto 25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--body-bg);
+    border:1px solid var(--secondary-color);
+    border-radius:50%;
+    color:var(--secondary-color);
+    font-size:.85rem;
+    font-weight:700;
+}
+
+.approach-content h3 {
+    margin:0 0 12px;
+    color:var(--primary-color);
+    font-size:1.05rem;
+}
+
+.approach-content p {
+    margin:0;
+    color:var(--muted-color);
+    font-size:.85rem;
+    line-height:1.7;
+}
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.about-values {
+    background:var(--body-bg);
+}
+
+.values-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.value-card {
+    padding:35px 25px;
+    text-align:center;
+    background:var(--white);
+    border:1px solid var(--border-color);
+    border-radius:18px;
+    transition:var(--transition);
+}
+
+.value-card:hover {
+    transform:translateY(-6px);
+    border-color:var(--secondary-color);
+}
+
+.value-card > svg {
+    width:28px;
+    height:28px;
+    margin-bottom:20px;
+    color:var(--secondary-color);
+    transition:var(--transition);
+}
+
+.value-card:hover > svg {
+    transform:scale(1.15);
+}
+
+.value-card h3 {
+    margin:0 0 10px;
+    color:var(--primary-color);
+    font-size:1.05rem;
+}
+
+.value-card p {
+    margin:0;
+    color:var(--muted-color);
+    font-size:.85rem;
+    line-height:1.7;
+}
+
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.about-final-cta {
+    padding:90px 0 40px;
+    text-align:center;
+    background:var(--white);
+}
+
+.about-cta-content {
+    max-width:700px;
+    margin:0 auto;
+}
+
+.about-cta-content h2 {
+    margin:0 0 15px;
+    color:var(--primary-color);
+    font-family:var(--heading-font);
+    font-size:clamp(2rem,4vw,3rem);
+}
+
+.about-cta-content p {
+    margin:0 auto 30px;
+    color:var(--muted-color);
+    line-height:1.8;
+}
+
+.about-cta-btn {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 28px;
+    background:var(--primary-color);
+    color:var(--white);
+    border:1px solid var(--primary-color);
+    border-radius:40px;
+    font-size:.85rem;
+    font-weight:600;
+    text-decoration:none;
+    transition:var(--transition);
+}
+
+.about-cta-btn svg {
+    width:17px;
+    height:17px;
+}
+
+.about-cta-btn:hover {
+    background:var(--secondary-color);
+    border-color:var(--secondary-color);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode .about-service-card,
+body.dark-mode .value-card {
+    background:var(--dark-card);
+}
+
+body.dark-mode .about-final-cta {
+    background:var(--dark-bg);
+}
+
+body.dark-mode .about-hero h1,
+body.dark-mode .story-content h2,
+body.dark-mode .section-heading h2,
+body.dark-mode .about-cta-content h2,
+body.dark-mode .about-service-card h3,
+body.dark-mode .value-card h3,
+body.dark-mode .approach-content h3 {
+    color:var(--white);
+}
+
+body.dark-mode .story-card {
+    background:var(--dark-card);
+}
+
+body.dark-mode .approach-number {
+    background:var(--dark-bg);
+}
+
+
+/* =========================================
+   RTL
+========================================= */
+
+html[dir="rtl"] .about-page {
+    direction:rtl;
+}
+
+html[dir="rtl"] .story-content,
+html[dir="rtl"] .about-service-card,
+html[dir="rtl"] .value-card,
+html[dir="rtl"] .approach-content {
+    text-align:right;
+}
+
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .about-hero,
+html[dir="rtl"] .story-card,
+html[dir="rtl"] .about-cta-content {
+    text-align:center;
+}
+
+
+/* =========================================
+   1024px
+========================================= */
+
+@media (max-width:1024px) {
+
+    .section-space {
+        padding:80px 0;
+    }
+
+    .story-grid {
+        gap:50px;
+    }
+
+    .about-service-card {
+        padding:35px 22px;
+    }
+
+    .values-grid {
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/* =========================================
+   768px
+========================================= */
+
+@media (max-width:768px) {
+
+    .section-space {
+        padding:65px 0;
+    }
+
+    .about-container {
+        width:90%;
+    }
+
+    .about-hero {
+        min-height:400px;
+        padding:70px 0;
+    }
+
+    .story-grid {
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .story-content {
+        text-align:center;
+    }
+
+    .story-visual {
+        order:2;
+    }
+
+    .about-service-grid {
+        grid-template-columns:1fr;
+    }
+
+    .about-service-card {
+        border-right:none;
+        border-bottom:1px solid var(--border-color);
+    }
+
+    .about-service-card:last-child {
+        border-bottom:none;
+    }
+
+    .approach-timeline {
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .approach-line {
+        top:34px;
+        bottom:34px;
+        left:50%;
+        right:auto;
+        width:1px;
+        height:auto;
+    }
+
+    .approach-item {
+        background:var(--body-bg);
+    }
+
+    .approach-content {
+        max-width:450px;
+        margin:0 auto;
+        text-align:center;
+    }
+
+    .values-grid {
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+
+/* =========================================
+   360px
+========================================= */
+
+@media (max-width:360px) {
+
+    .section-space {
+        padding:50px 0;
+    }
+
+    .about-container {
+        width:calc(100% - 30px);
+    }
+
+    .about-hero {
+        min-height:360px;
+        padding:55px 0;
+    }
+
+    .about-hero h1 {
+        font-size:2.45rem;
+    }
+
+    .about-hero p {
+        font-size:.88rem;
+    }
+
+    .story-card {
+        padding:45px 25px;
+    }
+
+    .story-card h3 {
+        font-size:1.7rem;
+    }
+
+    .section-heading {
+        margin-bottom:40px;
+    }
+
+    .section-heading h2,
+    .story-content h2 {
+        font-size:2rem;
+    }
+
+    .about-service-card {
+        padding:35px 22px;
+    }
+
+    .values-grid {
+        grid-template-columns:1fr;
+    }
+
+    .about-final-cta {
+        padding:55px 0 20px;
+    }
+
+    .about-cta-content h2 {
+        font-size:2rem;
+    }
+
+    .about-cta-btn {
+        width:100%;
+    }
+
+}
+/* =========================================
+   DARK MODE - TEXT VISIBILITY FIX
+========================================= */
+
+/* Main section headings */
+body.dark-mode .about-page h1,
+body.dark-mode .about-page h2,
+body.dark-mode .about-page h3,
+body.dark-mode .about-page p,
+body.dark-mode .about-page span {
+    transition: var(--transition);
+}
+
+/* Hero */
+body.dark-mode .about-hero h1,
+body.dark-mode .about-hero h1 span {
+    color: #ffffff !important;
+}
+
+body.dark-mode .about-hero p {
+    color: #d7dee7 !important;
+}
+
+body.dark-mode .about-eyebrow,
+body.dark-mode .section-label {
+    color: #C5965B !important;
+}
+
+/* Our Story */
+body.dark-mode .story-content h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .story-content p {
+    color: #d7dee7 !important;
+}
+
+/* Story card */
+body.dark-mode .story-card {
+    background: #102A43 !important;
+    border-color: #2b4055 !important;
+}
+
+body.dark-mode .story-card span,
+body.dark-mode .story-card h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .story-card p {
+    color: #d7dee7 !important;
+}
+
+/* What We Do */
+body.dark-mode .section-heading h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .section-heading p {
+    color: #d7dee7 !important;
+}
+
+/* Service cards */
+body.dark-mode .about-service-card {
+    background: #102A43 !important;
+    border-color: #2b4055 !important;
+}
+
+body.dark-mode .about-service-card h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .about-service-card p {
+    color: #d7dee7 !important;
+}
+
+body.dark-mode .service-icon {
+    color: #C5965B !important;
+    border-color: #C5965B !important;
+}
+
+/* Our Approach */
+body.dark-mode .approach-content h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .approach-content p {
+    color: #d7dee7 !important;
+}
+
+body.dark-mode .approach-number {
+    background: #091C2E !important;
+    color: #C5965B !important;
+    border-color: #C5965B !important;
+}
+
+body.dark-mode .approach-line {
+    background: #34485c !important;
+}
+
+/* Why Party Pop */
+body.dark-mode .value-card {
+    background: #102A43 !important;
+    border-color: #2b4055 !important;
+}
+
+body.dark-mode .value-card h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .value-card p {
+    color: #d7dee7 !important;
+}
+
+body.dark-mode .value-card > svg {
+    color: #C5965B !important;
+    stroke: #C5965B !important;
+}
+
+/* Final CTA */
+body.dark-mode .about-final-cta {
+    background: #091C2E !important;
+}
+
+body.dark-mode .about-cta-content h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .about-cta-content p {
+    color: #d7dee7 !important;
+}
+
+/* CTA button */
+body.dark-mode .about-cta-btn {
+    background: #C5965B !important;
+    border-color: #C5965B !important;
+    color: #091C2E !important;
+}
+
+body.dark-mode .about-cta-btn svg {
+    color: #091C2E !important;
+    stroke: #091C2E !important;
+}
+
+body.dark-mode .about-cta-btn:hover {
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #091C2E !important;
+}

@@ -3558,3 +3558,240 @@ body.dark-mode .contact-inner p {
     stroke: var(--primary-color) !important;
     transform: translate(3px, -3px);
 }
+/* =========================================
+   INCREASE PARAGRAPH FONT SIZES
+========================================= */
+
+/* 1. Experience cards */
+.experience-item p {
+    font-size: 1rem !important;
+    line-height: 1.7;
+}
+
+
+/* 2. Why Us / Values cards */
+.value-item p {
+    font-size: 1rem !important;
+    line-height: 1.7;
+}
+
+
+/* 3. Celebration cards */
+.home2-celebration-card p {
+    font-size: 0.95rem !important;
+    line-height: 1.7;
+}
+
+
+/* 4. Signature / About section */
+.home2-signature-content > p {
+    font-size: 1rem !important;
+    line-height: 1.8;
+}
+
+
+/* 5. Signature feature paragraphs */
+.home2-feature p {
+    font-size: 0.95rem !important;
+    line-height: 1.7;
+}
+
+
+/* 6. Custom Theme paragraph */
+.home2-theme-content > p {
+    font-size: 1rem !important;
+    line-height: 1.8;
+}
+
+
+/* 7. Service cards */
+.home2-service-content p {
+    font-size: 0.95rem !important;
+    line-height: 1.7;
+}
+
+
+/* 8. Section description paragraphs */
+.home2-celebrations .section-heading p,
+.home2-services .section-heading p,
+.home2-gallery .section-heading p {
+    font-size: 1rem !important;
+    line-height: 1.8;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .experience-item p,
+    .value-item p,
+    .home2-signature-content > p,
+    .home2-theme-content > p,
+    .testimonial-item p {
+        font-size: 0.95rem !important;
+        line-height: 1.7;
+    }
+
+    .home2-feature p,
+    .home2-service-content p,
+    .home2-celebration-card p {
+        font-size: 0.9rem !important;
+        line-height: 1.7;
+    }
+}
+/* =========================================
+   SIGNATURE COLLECTION - TEXT SIZE
+========================================= */
+
+.signature-item-content > span {
+    font-size: 0.7rem !important;
+}
+
+.signature-item-content h3 {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+}
+
+.signature-item-content p {
+    font-size: 0.95rem !important;
+    line-height: 1.75;
+    max-width: 320px;
+}
+
+.signature-item-content a {
+    font-size: 0.8rem !important;
+}
+
+.signature-item-content a svg {
+    width: 15px;
+    height: 15px;
+}
+@media (max-width: 1024px) {
+
+    .signature-item-content > span {
+        font-size: 0.68rem !important;
+    }
+
+    .signature-item-content h3 {
+        font-size: 1.65rem !important;
+    }
+
+    .signature-item-content p {
+        font-size: 0.92rem !important;
+    }
+
+    .signature-item-content a {
+        font-size: 0.78rem !important;
+    }
+}
+@media (max-width: 768px) {
+
+    .signature-item-content > span {
+        font-size: 0.68rem !important;
+    }
+
+    .signature-item-content h3 {
+        font-size: 1.6rem !important;
+    }
+
+    .signature-item-content p {
+        font-size: 0.92rem !important;
+        line-height: 1.7;
+    }
+
+    .signature-item-content a {
+        font-size: 0.78rem !important;
+    }
+}
+@media (max-width: 360px) {
+
+    .signature-item-content > span {
+        font-size: 0.65rem !important;
+    }
+
+    .signature-item-content h3 {
+        font-size: 1.55rem !important;
+    }
+
+    .signature-item-content p {
+        font-size: 0.9rem !important;
+        line-height: 1.7;
+    }
+
+    .signature-item-content a {
+        font-size: 0.78rem !important;
+    }
+}
+/* =========================================
+   INCREASE PHILOSOPHY & COLLECTION TEXT
+========================================= */
+
+/* Personal / Thoughtful / Memorable */
+.philosophy-card p {
+    font-size: 1rem !important;
+    line-height: 1.75;
+}
+
+/* Created with intention - description */
+.signature-heading-new p {
+    font-size: 1rem !important;
+    line-height: 1.8;
+}
+@media (max-width: 768px) {
+
+    .philosophy-card p {
+        font-size: 0.95rem !important;
+        line-height: 1.7;
+    }
+
+    .signature-heading-new p {
+        font-size: 0.95rem !important;
+        line-height: 1.75;
+    }
+}
+@media (max-width: 360px) {
+
+    .philosophy-card p {
+        font-size: 0.9rem !important;
+        line-height: 1.7;
+    }
+
+    .signature-heading-new p {
+        font-size: 0.9rem !important;
+        line-height: 1.7;
+    }
+}
+/* =====================================================
+   HERO BUTTON VISIBILITY
+===================================================== */
+
+.hero-buttons .primary-btn {
+    background: #102A43 !important;
+    color: #FFFFFF !important;
+    border: 2px solid #102A43 !important;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.28),
+        0 0 0 4px rgba(255, 255, 255, 0.12);
+
+    text-shadow: none;
+}
+
+.hero-buttons .primary-btn svg {
+    color: #FFFFFF !important;
+    stroke: #FFFFFF !important;
+}
+
+.hero-buttons .primary-btn:hover {
+    background: #A9824F !important;
+    border-color: #A9824F !important;
+    color: #102A43 !important;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.30),
+        0 0 0 4px rgba(255, 255, 255, 0.18);
+}
+
+.hero-buttons .primary-btn:hover svg {
+    color: #102A43 !important;
+    stroke: #102A43 !important;
+}

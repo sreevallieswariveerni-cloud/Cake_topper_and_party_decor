@@ -1036,3 +1036,54 @@ body.dark-mode .design-submit-btn svg {
     }
 
 }
+/* =========================================
+   CUSTOM DESIGN - TEXT SIZE
+========================================= */
+
+/* Share Your Design / Tell Us Your Details / We Create It */
+.custom-step h3 {
+    font-size: 1.8rem !important;
+    line-height: 1.25;
+}
+
+.custom-step p {
+    font-size: 1rem !important;
+    line-height: 1.75;
+}
+
+/* Names & Text / Colours & Themes / Your Inspiration / Unique Details */
+.customization-item h3 {
+    font-size: 1.8rem !important;
+    line-height: 1.25;
+}
+
+.customization-item p {
+    font-size: 1rem !important;
+    line-height: 1.75;
+}
+@media (max-width: 768px) {
+
+    .custom-step h3,
+    .customization-item h3 {
+        font-size: 1.6rem !important;
+    }
+
+    .custom-step p,
+    .customization-item p {
+        font-size: 0.95rem !important;
+        line-height: 1.7;
+    }
+}
+@media (max-width: 360px) {
+
+    .custom-step h3,
+    .customization-item h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .custom-step p,
+    .customization-item p {
+        font-size: 0.9rem !important;
+        line-height: 1.7;
+    }
+}

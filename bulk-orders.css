@@ -1238,3 +1238,81 @@ body.dark-mode .bulk-submit-btn:hover {
     border-color: #E8CFA8 !important;
     color: #102A43 !important;
 }
+/* =========================================
+   BULK ORDERS - TEXT SIZE
+========================================= */
+
+/* Main section description */
+.bulk-intro p,
+.bulk-section-header p {
+    font-size: 1rem !important;
+    line-height: 1.8;
+}
+
+/* Audience cards */
+.bulk-audience-card h3 {
+    font-size: 1.7rem !important;
+    line-height: 1.3;
+}
+
+.bulk-audience-card p {
+    font-size: 0.95rem !important;
+    line-height: 1.7;
+}
+
+/* Enquiry / Process cards */
+.bulk-process-card h3 {
+    font-size: 1.65rem !important;
+    line-height: 1.3;
+}
+
+.bulk-process-card p {
+    font-size: 0.95rem !important;
+    line-height: 1.7;
+}
+.bulk-audience-grid .bulk-audience-card h3,
+.bulk-process-grid .bulk-process-card h3 {
+    font-size: 1.7rem !important;
+}
+
+.bulk-audience-grid .bulk-audience-card p,
+.bulk-process-grid .bulk-process-card p {
+    font-size: 0.95rem !important;
+    line-height: 1.7;
+}
+@media (max-width: 768px) {
+
+    .bulk-intro p,
+    .bulk-section-header p {
+        font-size: 0.95rem !important;
+    }
+
+    .bulk-audience-card h3,
+    .bulk-process-card h3 {
+        font-size: 1.55rem !important;
+    }
+
+    .bulk-audience-card p,
+    .bulk-process-card p {
+        font-size: 0.92rem !important;
+        line-height: 1.7;
+    }
+}
+@media (max-width: 360px) {
+
+    .bulk-intro p,
+    .bulk-section-header p {
+        font-size: 0.9rem !important;
+    }
+
+    .bulk-audience-card h3,
+    .bulk-process-card h3 {
+        font-size: 1.45rem !important;
+    }
+
+    .bulk-audience-card p,
+    .bulk-process-card p {
+        font-size: 0.9rem !important;
+        line-height: 1.7;
+    }
+}
